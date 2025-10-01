@@ -47,7 +47,7 @@ body {
   background: #6a11cb;
   top: -100px;
   left: -100px;
-  animation: move-shape-1 20s infinite alternate;
+  animation: move-shape-1 10s infinite alternate;
 }
 
 .shape-2 {
@@ -56,7 +56,25 @@ body {
   background: #2575fc;
   bottom: -150px;
   right: -150px;
-  animation: move-shape-2 25s infinite alternate;
+  animation: move-shape-2 12s infinite alternate;
+}
+
+@keyframes move-shape-1 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(100px, 50px);
+  }
+}
+
+@keyframes move-shape-2 {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-100px, -50px);
+  }
 }
 
 @keyframes move-shape-1 {
