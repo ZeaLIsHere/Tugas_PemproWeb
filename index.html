@@ -3,14 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/responsive.css" />
     <title>Tariq Rahmadari - Web Dev</title>
+    <link rel="stylesheet" href="style/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Header -->
+    <div class="background-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    
     <header>
       <div class="main-container">
         <div class="nav">
@@ -34,18 +44,21 @@
             <div class="line-3"></div>
           </div>
         </div>
-
         <section id="hero">
           <div class="hero-left">
             <h3 class="pre-title">My name is</h3>
             <h1 class="hero-name">Tariq <span>Rahmadari</span></h1>
             <p>
-            Halo! Saya Tariq Rahmadari, mahasiswa Ilmu Komputer USU Dengan NIM 241401021 di Kom C yang memiliki minat dalam dunia teknologi dan gaming,
-            saya selalu berusaha mengembangkan diri dan mencari 
-            inovasi baru dalam setiap langkah.
+              Halo! Saya Tariq Rahmadari, mahasiswa Ilmu Komputer USU Dengan NIM
+              241401021 di Kom C yang memiliki minat dalam dunia teknologi dan
+              gaming, saya selalu berusaha mengembangkan diri dan mencari inovasi
+              baru dalam setiap langkah.
             </p>
-            <p> Dengan motto "Selalu menjadi lebih baik", saya berkomitmen untuk terus belajar, 
-            berkembang, dan memberikan kontribusi positif bagi lingkungan sekitar.</p>
+            <p>
+              Dengan motto "Selalu menjadi lebih baik", saya berkomitmen untuk
+              terus belajar, berkembang, dan memberikan kontribusi positif bagi
+              lingkungan sekitar.
+            </p>
           </div>
 
           <div class="hero-right">
@@ -54,16 +67,19 @@
         </section>
       </div>
     </header>
-    <!-- End Header -->
+    <br>
+    <br>
+    <br>
 
-    <!-- Services -->
     <section id="services">
-      <div data-aos="fade-up" class="services main-container">
-        <h3 class="pre-title">Services</h3>
-        <h1 class="section-title services-title">Specialized In</h1>
+      <div class="services main-container">
+        <h3 data-aos="fade-up" class="pre-title text-center">Services</h3>
+        <h1 data-aos="fade-up" class="section-title services-title">
+          Specialized In
+        </h1>
 
         <div class="grid-3">
-          <div data-aos="fade-up" class="service">
+          <div data-aos="fade-up" data-aos-delay="200" class="service">
             <div class="service-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,12 +93,10 @@
               </svg>
             </div>
             <h4>Ex Imo Mobile Legends</h4>
-            <p>
-            Bermain Mobile Legends sudah menjadi bagian dari diri saya '-'
-            </p>
+            <p>Bermain Mobile Legends sudah menjadi bagian dari diri saya '-'</p>
           </div>
 
-          <div data-aos="fade-up" class="service">
+          <div data-aos="fade-up" data-aos-delay="400" class="service">
             <div class="service-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -96,46 +110,43 @@
               </svg>
             </div>
             <h4>Web Development</h4>
-            <p>
-            Saya suka mengikuti tutorial membuat website yang ada di internet ^_^
-            </p>
+            <p>Saya suka mengikuti tutorial membuat website yang ada di internet ^_^</p>
           </div>
 
-          <div data-aos="fade-up" class="service">
+          <div data-aos="fade-up" data-aos-delay="600" class="service">
             <div class="service-icon">
-              <svg
-                width="24"
-                height="24"
-                xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12m2.557 16h-5.115c.546 2.46 1.441 4.114 2.558 5.744 1.194-1.741 2.041-3.41 2.557-5.744m-7.157 0h-4.567c1.236 2.825 3.704 4.972 6.755 5.716-1.048-1.733-1.783-3.658-2.188-5.716m13.767 0h-4.567c-.391 1.988-1.095 3.887-2.175 5.694 3.012-.763 5.517-2.895 6.742-5.694m-14.005-6h-4.962c-.267 1.313-.267 2.685 0 4h4.915c-.119-1.329-.101-2.672.047-4m7.661 0h-5.647c-.165 1.326-.185 2.672-.053 4h5.753c.133-1.328.111-2.673-.053-4m6.977 0h-4.963c.148 1.328.166 2.671.048 4h4.915c.26-1.285.273-2.648 0-4m-12.156-7.729c-3.077.732-5.567 2.886-6.811 5.729h4.653c.435-2.042 1.178-3.985 2.158-5.729m2.355-.048c-1.089 1.77-1.91 3.453-2.463 5.777h4.927c-.534-2.246-1.337-3.948-2.464-5.777m2.368.069c1.013 1.812 1.733 3.76 2.146 5.708h4.654c-1.232-2.816-3.762-4.958-6.8-5.708"
                 />
               </svg>
             </div>
             <h4>C++ Programmer</h4>
-            <p>
-            Namanya juga bocah dari USU ya bisanya cuma C++ ^.^
-            </p>
+            <p>Namanya juga bocah dari USU ya bisanya cuma C++ ^.^</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Services -->
 
-    <!-- Portfolio -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
     <section id="portfolios">
-      <div  class="portfolios main-container">
+      <div class="portfolios main-container">
         <h3 data-aos="fade-right" class="pre-title">My Works</h3>
         <h1 data-aos="fade-right" class="section-title">Featured Portfolios</h1>
 
-        <div data-aos="fade-up" class="grid-3">
-          <!-- Portfolio 1 -->
-          <div class="portfolio">
+        <div class="grid-3">
+          <div data-aos="fade-up" data-aos-delay="200" class="portfolio">
             <div class="portfolio-cover">
-              <img
-                src="img/portfolio-1.png"
-                alt="Portfolio 1"
-              />
+              <img src="img/portfolio-1.png" alt="Portfolio 1" />
             </div>
             <div class="portfolio-info">
               <div class="portfolio-title">
@@ -146,17 +157,17 @@
                 <div>Tailwind</div>
               </div>
               <p>
-                Bikin website modal contek dari github orang, biasanya langsung di pamerin ke sw biar nampak keren
+                Bikin website modal contek dari github orang, biasanya langsung
+                di pamerin ke sw biar nampak keren
               </p>
             </div>
           </div>
 
-          <!-- Portfolio 2 -->
-          <div class="portfolio">
+          <div data-aos="fade-up" data-aos-delay="400" class="portfolio">
             <div class="portfolio-cover">
               <img
                 src="img/Hire Professional Video Editor.jpeg"
-                alt="Portfolio 1"
+                alt="Portfolio 2"
               />
             </div>
             <div class="portfolio-info">
@@ -168,44 +179,48 @@
                 <div>Creative</div>
               </div>
               <p>
-                Editor berkelasnya SMA Negeri 1 Kejuruan Muda, sudah pernah menginap di ruang perfilman 2 hari 2 malam
+                Editor berkelasnya SMA Negeri 1 Kejuruan Muda, sudah pernah
+                menginap di ruang perfilman 2 hari 2 malam
               </p>
             </div>
           </div>
 
-          <!-- Portfolio 3 -->
-          <div class="portfolio">
+          <div data-aos="fade-up" data-aos-delay="600" class="portfolio">
             <div class="portfolio-cover">
-              <img
-                src="img/portfolio-3.jpeg"
-                alt="Portfolio 1"
-              />
+              <img src="img/portfolio-3.jpeg" alt="Portfolio 3" />
             </div>
             <div class="portfolio-info">
               <div class="portfolio-title">
-                <h4>Dashboard Admin</h4>
+                <h4>Dashboard</h4>
               </div>
               <div class="portfolio-tags">
                 <div>React</div>
                 <div>Materialize</div>
               </div>
               <p>
-                Memiliki 3 teman atmint yang siap membantu kapanpun dan dimanapun kecuali saat "mustafa kan dulu le"
+                Memiliki 3 teman atmint yang siap membantu kapanpun dan
+                dimanapun kecuali saat "mustafa kan dulu le"
               </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- End Portfolios -->
 
-    <!-- Skills & Education -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
     <section id="skills">
       <div class="skills main-container">
         <h3 data-aos="fade-right" class="pre-title">Learning Path</h3>
         <h1 data-aos="fade-right" class="section-title">Skills & Education</h1>
 
-        <div data-aos="fade-right" class="skills-grid">
+        <div data-aos="fade-up" class="skills-grid">
           <div class="skills-left">
             <div class="education">
               <div class="line">
@@ -241,12 +256,14 @@
 
           <div class="skills-right">
             <p>
-            Sejak lulus SMA dan dibelikan Laptop oleh orang tua, saya mulai menyentuh
-            dunia Front-End yang saya mulai dari bahasa HTML dan CSS dimana saat itu saya menonton
-            dari channel YouTube Dea Afrizal.
-            Sebagai seorang yang gemar bermain game, saya percaya bahwa gaming tidak hanya sebagai 
-            hiburan, tetapi juga sebagai media pembelajaran strategi, problem solving, dan teamwork. 
-            Pengalaman ini membantu saya dalam menghadapi tantangan akademik dan kehidupan sehari-hari.
+              Sejak lulus SMA dan dibelikan Laptop oleh orang tua, saya mulai
+              menyentuh dunia Front-End yang saya mulai dari bahasa HTML dan CSS
+              dimana saat itu saya menonton dari channel YouTube Dea Afrizal.
+              Sebagai seorang yang gemar bermain game, saya percaya bahwa gaming
+              tidak hanya sebagai hiburan, tetapi juga sebagai media
+              pembelajaran strategi, problem solving, dan teamwork. Pengalaman
+              ini membantu saya dalam menghadapi tantangan akademik dan
+              kehidupan sehari-hari.
             </p>
 
             <div class="skills-list">
@@ -255,7 +272,7 @@
                 <li>😒CSS</li>
                 <li>😒C</li>
               </ul>
-              
+
               <ul>
                 <li>😍JavaScript</li>
                 <li>😒Python</li>
@@ -266,114 +283,129 @@
         </div>
       </div>
     </section>
-    <!-- End Skills & Education  -->
 
     <main class="container mx-auto px-6 py-12">
-    <section id="jadwal" class="section-content ">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Jadwal Kuliah</h2>
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
-                    <div class="bg-gradient-to-r from-purple-400 to-purple-400 text-white p-6">
-                        <h3 class="text-xl font-semibold">Semester 3</h3>
-                    </div>
-                    <div class="overflow-x-auto">
-                        <table class="w-full">
-                            <thead class="bg-gray-50">
-                                <tr>
-                                    <th class="px-6 py-4 text-left font-semibold text-gray-800">Hari</th>
-                                    <th class="px-6 py-4 text-left font-semibold text-gray-800">Waktu</th>
-                                    <th class="px-6 py-4 text-left font-semibold text-gray-800">Mata Kuliah</th>
-                                    <th class="px-6 py-4 text-left font-semibold text-gray-800">Ruangan</th>
-                                    <th class="px-6 py-4 text-left font-semibold text-gray-800">Dosen</th>
-                                </tr>
-                            </thead>
-                            <tbody class="divide-y divide-gray-200">
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4 font-medium text-gray-800">Senin</td>
-                                    <td class="px-6 py-4 text-gray-600">08:00 - 09:40</td>
-                                    <td class="px-6 py-4 text-gray-800">Basic English Grammar</td>
-                                    <td class="px-6 py-4 text-gray-600">Ruang 101</td>
-                                    <td class="px-6 py-4 text-gray-600">Prof. Dr. Nurlela M.Hum.</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4 font-medium text-gray-800">Senin</td>
-                                    <td class="px-6 py-4 text-gray-600">13:00 - 15:30</td>
-                                    <td class="px-6 py-4 text-gray-800">Manajemen Sistem Basis Data</td>
-                                    <td class="px-6 py-4 text-gray-600">Ruang 101</td>
-                                    <td class="px-6 py-4 text-gray-600">Dedy Arisandi S.T., M.Kom.</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4 font-medium text-gray-800">Rabu</td>
-                                    <td class="px-6 py-4 text-gray-600">08:00 - 10:30</td>
-                                    <td class="px-6 py-4 text-gray-800">Struktur Data</td>
-                                    <td class="px-6 py-4 text-gray-600">Ruang 104</td>
-                                    <td class="px-6 py-4 text-gray-600">Anandhini Medianty Nababan S.Kom., M.T</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4 font-medium text-gray-800">Rabu</td>
-                                    <td class="px-6 py-4 text-gray-600">10:30 - 13:00</td>
-                                    <td class="px-6 py-4 text-gray-800">Kecerdasan Buatan</td>
-                                    <td class="px-6 py-4 text-gray-600">Ruang 105</td>
-                                    <td class="px-6 py-4 text-gray-600">Dr. Pauzi Ibrahim Nainggolan S.Komp., M.Sc.</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4 font-medium text-gray-800">Rabu</td>
-                                    <td class="px-6 py-4 text-gray-600">14:40 - 17:10</td>
-                                    <td class="px-6 py-4 text-gray-800">Pemrograman Web</td>
-                                    <td class="px-6 py-4 text-gray-600">Ruang 102</td>
-                                    <td class="px-6 py-4 text-gray-600">Dr. Dewi Sartika Br Ginting S.Kom., M.Kom</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4 font-medium text-gray-800">Jumat</td>
-                                    <td class="px-6 py-4 text-gray-600">08:00 - 10:30</td>
-                                    <td class="px-6 py-4 text-gray-800">Basis Data</td>
-                                    <td class="px-6 py-4 text-gray-600">Ruang 101</td>
-                                    <td class="px-6 py-4 text-gray-600">Insidini Fawwaz M.Kom</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4 font-medium text-gray-800">Jumat</td>
-                                    <td class="px-6 py-4 text-gray-600">10:30 - 12:10</td>
-                                    <td class="px-6 py-4 text-gray-800">Wirausaha Digital</td>
-                                    <td class="px-6 py-4 text-gray-600">Ruang 105</td>
-                                    <td class="px-6 py-4 text-gray-600">Dr. T. Henny Febriana Harumy S.Kom., M.Kom</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4 font-medium text-gray-800">-</td>
-                                    <td class="px-6 py-4 text-gray-600"><i>belum diset</i></td>
-                                    <td class="px-6 py-4 text-gray-800">Praktikum Basis Data</td>
-                                    <td class="px-6 py-4 text-gray-600">-</td>
-                                    <td class="px-6 py-4 text-gray-600">Dr. Dewi Sartika Br Ginting S.Kom., M.Kom</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4 font-medium text-gray-800">-</td>
-                                    <td class="px-6 py-4 text-gray-600"><i>belum diset</i></td>
-                                    <td class="px-6 py-4 text-gray-800">Praktikum Pemprograman Web</td>
-                                    <td class="px-6 py-4 text-gray-600">-</td>
-                                    <td class="px-6 py-4 text-gray-600">Nurrahmadayeni M.Kom</td>
-                                </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="px-6 py-4 font-medium text-gray-800">-</td>
-                                    <td class="px-6 py-4 text-gray-600"><i>belum diset</i></td>
-                                    <td class="px-6 py-4 text-gray-800">Praktikum Struktur Data</td>
-                                    <td class="px-6 py-4 text-gray-600">-</td>
-                                    <td class="px-6 py-4 text-gray-600">Anandhini Medianty Nababan S.Kom., M.T</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+      <section id="jadwal" class="section-content">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold mb-8 text-center text-white">
+            Jadwal Kuliah
+          </h2>
+          <div
+            data-aos="fade-up"
+            class="glass-container rounded-xl shadow-lg overflow-hidden"
+          >
+            <div class="bg-gradient-to-r from-purple-500 to-indigo-500 text-white p-6">
+              <h3 data-aos="fade-up" class="text-xl font-semibold">Semester 3</h3>
             </div>
-        </section>
-      </main>
+            <div data-aos="fade-up" class="overflow-x-auto">
+              <table class="w-full">
+                <thead>
+                  <tr>
+                    <th class="px-6 py-4 text-left font-semibold">Hari</th>
+                    <th class="px-6 py-4 text-left font-semibold">Waktu</th>
+                    <th class="px-6 py-4 text-left font-semibold">Mata Kuliah</th>
+                    <th class="px-6 py-4 text-left font-semibold">Ruangan</th>
+                    <th class="px-6 py-4 text-left font-semibold">Dosen</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200/20">
+                  <tr class="transition-colors">
+                    <td class="px-6 py-4 font-medium">Senin</td>
+                    <td class="px-6 py-4">08:00 - 09:40</td>
+                    <td class="px-6 py-4">Basic English Grammar</td>
+                    <td class="px-6 py-4">Ruang 101</td>
+                    <td class="px-6 py-4">Prof. Dr. Nurlela M.Hum.</td>
+                  </tr>
+                  <tr class="transition-colors">
+                    <td class="px-6 py-4 font-medium">Senin</td>
+                    <td class="px-6 py-4">13:00 - 15:30</td>
+                    <td class="px-6 py-4">Manajemen Sistem Basis Data</td>
+                    <td class="px-6 py-4">Ruang 101</td>
+                    <td class="px-6 py-4">Dedy Arisandi S.T., M.Kom.</td>
+                  </tr>
+                  <tr class="transition-colors">
+                    <td class="px-6 py-4 font-medium">Selasa</td>
+                    <td class="px-6 py-4">12:10 - 13:50</td>
+                    <td class="px-6 py-4">Praktikum Struktur Data</td>
+                    <td class="px-6 py-4">Lab 2</td>
+                    <td class="px-6 py-4">
+                      Anandhini Medianty Nababan S.Kom., M.T
+                    </td>
+                  </tr>
+                  <tr class="transition-colors">
+                    <td class="px-6 py-4 font-medium">Selasa</td>
+                    <td class="px-6 py-4">13:50 - 15:30</td>
+                    <td class="px-6 py-4">Praktikum Pemprograman Web</td>
+                    <td class="px-6 py-4">Lab 3</td>
+                    <td class="px-6 py-4">Nurrahmadayeni M.Kom</td>
+                  </tr>
+                  <tr class="transition-colors">
+                    <td class="px-6 py-4 font-medium">Rabu</td>
+                    <td class="px-6 py-4">08:00 - 10:30</td>
+                    <td class="px-6 py-4">Struktur Data</td>
+                    <td class="px-6 py-4">Ruang 104</td>
+                    <td class="px-6 py-4">
+                      Anandhini Medianty Nababan S.Kom., M.T
+                    </tr>
+                    <tr class="transition-colors">
+                      <td class="px-6 py-4 font-medium">Rabu</td>
+                      <td class="px-6 py-4">10:30 - 13:00</td>
+                    <td class="px-6 py-4">Kecerdasan Buatan</td>
+                    <td class="px-6 py-4">Ruang 105</td>
+                    <td class="px-6 py-4">
+                      Dr. Pauzi Ibrahim Nainggolan S.Komp., M.Sc.
+                    </td>
+                  </tr>
+                </td>
+                  <tr class="transition-colors">
+                    <td class="px-6 py-4 font-medium">Rabu</td>
+                    <td class="px-6 py-4">14:40 - 17:10</td>
+                    <td class="px-6 py-4">Pemrograman Web</td>
+                    <td class="px-6 py-4">Ruang 102</td>
+                    <td class="px-6 py-4">
+                      Dr. Dewi Sartika Br Ginting S.Kom., M.Kom
+                    </td>
+                  </tr>
+                  <tr class="transition-colors">
+                    <td class="px-6 py-4 font-medium">Jumat</td>
+                    <td class="px-6 py-4">08:00 - 10:30</td>
+                    <td class="px-6 py-4">Basis Data</td>
+                    <td class="px-6 py-4">Ruang 101</td>
+                    <td class="px-6 py-4">Insidini Fawwaz M.Kom</td>
+                  </tr>
+                  <tr class="transition-colors">
+                    <td class="px-6 py-4 font-medium">Jumat</td>
+                    <td class="px-6 py-4">10:30 - 12:10</td>
+                    <td class="px-6 py-4">Wirausaha Digital</td>
+                    <td class="px-6 py-4">Ruang 105</td>
+                    <td class="px-6 py-4">
+                      Dr. T. Henny Febriana Harumy S.Kom., M.Kom
+                    </td>
+                  </tr>
+                  <tr class="transition-colors">
+                    <td class="px-6 py-4 font-medium">Jumat</td>
+                    <td class="px-6 py-4">14:40 - 17:10</td>
+                    <td class="px-6 py-4">Praktikum Basis Data</td>
+                    <td class="px-6 py-4">Lab 3</td>
+                    <td class="px-6 py-4">
+                      Dr. Dewi Sartika Br Ginting S.Kom., M.Kom
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <!-- Fomter -->
     <footer class="container mx-auto px-6 text-center">
-      <div class="footer-icons flex justify-center gap-4">
-        <a href="https://www.instagram.com/tariqrhmdr/">
+      <div data-aos="fade-up" class="footer-icons flex justify-center gap-6 mb-4">
+        <a href="https://www.instagram.com/tariqrahmadr/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
           >
             <path
@@ -385,8 +417,8 @@
         <a href="https://www.linkedin.com/in/tariq-rahmadari-84b2a1327/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
           >
             <path
@@ -398,8 +430,8 @@
         <a href="https://x.com/TariqRahmadari">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
           >
             <path
@@ -411,8 +443,8 @@
         <a href="https://github.com/ZeaLIsHere">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            width="24"
+            height="24"
             viewBox="0 0 24 24"
           >
             <path
@@ -423,12 +455,14 @@
       </div>
       <p>&#169; 2025 - Made by Wik</p>
     </footer>
-    <!-- End Footer -->
 
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
     </script>
   </body>
 </html>
