@@ -151,7 +151,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  border-radius: 15px;
+  border-radius: 50px;
   background: var(--glass-bg);
   backdrop-filter: var(--blur-effect);
   -webkit-backdrop-filter: var(--blur-effect);
